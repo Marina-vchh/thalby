@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+.header {
+  padding: 16px 0;
+}
+
+.container {
+  max-width: 1088px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  color: #1C1B1B;
+}
+
+/* для того, чтобы мы могли нормально сужать экран - задаем отступ в относительных выличинах vw или %
+помним что 100% - ширина родителя (контейнер - 1088px)
+помним что 100vw - ширина экрана
+в данном случае мы вычисляли 83px от ширины макета по фигме (1440) */
+/* добавила максимальную ширину для nav как по фигме, это для того чтобы отступы считались корректнее */
+.nav {
+  margin-right: 9%;
+  max-width: 423px;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.nav li {
+  font-weight: 700;
+  color:#1C1B1B;
+}
+
+/* заменено на относительные единицы */
+.logo {
+  margin-right: 24%;
+}
+
+/* добавлен column-gap (отступ между колонками) */
+/* также здесь задан   margin-left: auto чтобы этот блок был всегда прибит к правому краю контейнера */
+.header__icons-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: auto
+}
+
+.introduction {
+  background: #F0EFEB;
+}
+
+.introduction__text-block {
+  max-width: 525px;
+  padding: 90px 0;
+}
+
+.introduction__container {
+  display: flex;
+  justify-content:space-between;
+}
+
+.introduction__title {
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 42px;
+}
+
+.introduction__text {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+
+.introduction__button {
+  color: #FFFFFF;
+  background-color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 8px 23px;
+  border-radius: 100px;
+}
+
+.people, .power {
+  padding: 76px 0 51px;
+}
+
+.people__container, .power__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.people__text-block, .power__text-block {
+  max-width: 530px;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.people__title, .power__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 31px;
+  color: #00000062;
+}
+
+.people__text, .power__text {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+
+.people__link , .power__link{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  border-bottom: 1px solid black;
+}
+
+.power {
+  background-color: #cccccc6b;
+}

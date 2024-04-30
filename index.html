@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thalby</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            Shop
+          </li>
+          <li>
+            Collections
+          </li>
+          <li>
+            Try a Free Guide
+          </li>
+          <li>
+            Stories
+          </li>
+        </ul>
+      </nav>
+      <img src="./img/Logo.svg" alt="logo" class="logo">
+      <!-- новые картинки, картинка вложена в <a/> -->
+        <div class="header__icons-wrapper">
+          <a href="/">
+            <img src="./img/headerIcons/InstIcon.svg" alt="inst" class="header__icon">
+          </a>
+          <a href="/">
+            <img src="./img/headerIcons/SearchIcon.svg" alt="seacrh" class="header__icon">
+          </a>
+          <a href="/">
+            <img src="./img/headerIcons/StoreIcon.svg" alt="store" class="header__icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="introduction">
+      <div class="container introduction__container">
+        <article class="introduction__text-block">
+          <h1 class="introduction__title">
+            Fall deeper in love with 
+            <br>
+            humanity.
+          </h1>
+          <p class="introduction__text">Get to know the world through our concise, informative and inspiring guides.</p>
+          <button class="introduction__button">Shop Now</button>
+        </article>
+        <!-- поменяла картинку IntroductionImage, задала явно размеры -->
+        <img class="introduction__image" width="500px" height="550px" src="./img/IntroductionImage.png" alt="devices">
+      </div>
+    </section>
+
+    <section class="people-power">
+      <div class="container people__container">
+        <img class="introduction__image" src="./img/PeopleImage.png" alt="people">
+        <article class="people__text-block">
+          <h2 class="people__title">
+            Fall deeper in love with humanity.
+          </h2>
+          <p class="people__text">Our guides to society deliver all the social insight you need, helping you understand how people live, love and play today and why communities are the way they are.</p>
+          <a class="people__link">Shop Society Guides</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="power">
+      <div class="container power__container">
+        <img src="./img/PowerImage.png" alt="people">
+        <article class="power__text-block">
+          <h2 class="power__title">
+            Culture and Heritage
+          </h2>
+          <p class="power__text">As well as covering heritage and tradition, our guides to culture introduce you to the designers, artists and chefs creating at the forefront of today's culture.</p>
+          <a class="power__link">Shop Culture Guides</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
